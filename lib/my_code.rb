@@ -11,9 +11,9 @@ end
 
 
 def reduce(array, start = nil )
-  counter = 0 
-  total = start 
+   
   if 
+    
   while counter < array.length do
      total = yield(array[counter], total)
     counter += 1 
