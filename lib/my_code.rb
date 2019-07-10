@@ -17,5 +17,5 @@ def reduce(array)
      yield(array[counter], total)
     counter += 1 
   end
-  return new_total
+  return total
 end
