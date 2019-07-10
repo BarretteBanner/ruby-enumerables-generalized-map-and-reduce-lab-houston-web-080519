@@ -12,9 +12,9 @@ end
 
 def reduce(array)
   counter = 0 
-  new_total = 0  
+  total = 0  
   while counter < array.length do
-     yield(array, new_total)
+     yield(array, total)
     counter += 1 
   end
   return new_total
