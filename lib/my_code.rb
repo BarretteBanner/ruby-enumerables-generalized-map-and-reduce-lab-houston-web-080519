@@ -12,11 +12,16 @@ end
 
 def reduce(array, start = 0 )
   counter = 0 
-  total = start   
+  total = start 
+  is_true = false
   while counter < array.length do
      total = yield(array[counter], total)
+     if !!array[counter] == true 
+       is_true = true 
+     end 
     counter += 1 
   end
   
   return total
+  return is_true
 end  
